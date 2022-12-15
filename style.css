@@ -75,7 +75,7 @@
     color: white;
     outline: none;
     transition: .6s ease;
-    margin: 5px;
+    margin: 6px;
 }
 .btn:hover{
     cursor: pointer;
