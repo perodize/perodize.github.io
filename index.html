@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Port/p.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="table.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">Hello, I am <br> Jasper Eldrich Ballesteros</h1>
+            <button  class="btn">
+                <a href="https://pdfhost.io/v/QZpbC.Im3_JasperResume" download>Download My Resume</a>
+            </button>
+        </div>
+    </section>
+
+    <section id="about">
+                <h1 class="headings">ABOUT ME</h1>
+                <div id="pic">
+                <img src="picm.jpg" alt="">
+                <div id="intro">
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <h2>Jasper Eldrich Ballesteros</h2>
+                    <p>I am Jasper Eldrich Ballesteros, I live in Banawa Sitio Lower Gunclub Brgy. Guadalupe Cebu City
+                        
+                        <br> I earned my degree from the University of Cebu - Main Campus and 
+                        graduated with a Bachelor of Science in Information Technology.<br> 
+                        I've been working as a penetration tester for about two years. 
+                        As a penetration tester, I like to think of myself as analytical and meticulous, 
+                        which is an important trait to have if you work in this industry. <br>
+                        Working on simulated cyberattacks on a company's computer systems and networks is something I really enjoy doing. 
+                        <br>
+                        <br>
+                        In my free time, I love to do any form of arts such as tattoing and painting.
+                        <br>I became tattoo enthusiast when i was 18 years old. And now I am 22 years old Im tattoing about 4 years.<br>
+                        On my day off thats the only time i can do my passion.   
+                        
+
+                    </p>
+                </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h1 class="headings">PORTFOLIO</h1>
+        <div class="gallery">
+            <p>I dedicated myself to tattooing, and many other things form of art. Even though for some people this is only a hobby, I find that creating art is good for me. Tattoing helped me better understand myself during my anxious and depressive periods. I often reflect on what went wrong, what I did wrong, and whether or not my actions were morally and ethically correct. It seems as though the tattoo machine gave me access to my inner self. The more strokes I make, the less anxious I feel.
+                <br><br>I became a fan of art when I was six years old. When I entered college, I intended to major in fine arts, but the cost was prohibitive for me. Despite my lack of resources, I continued to pursue it as my favorite interest.    
+                <br><br> Through art, I was able to connect with people in a community and be myself. Great artists are all around me, and I am humbled to see them on their shows. I don't feel insignificant, though; on the contrary, it motivated me to work harder and aim for excellence the next time I pick up a tattoo machine, Below is my sample works.<br><br>
+            </p>       
+            <img src="Port/tat1.jpg" alt="">
+            <img src="Port/tat2.jpg" alt="">
+            <img src="Port/tat3.jpg" alt="">
+            <img src="Port/tat4.jpg" alt="">
+            <img src="Port/tat5.jpg" alt="">
+            <img src="Port/tat6.jpg" alt="">
+                 
+        </div>
+    </section>
+
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+        <div class="row">
+            <div class="box">
+            <img src="Services/tati.png" alt="">
+            <h1 class="headings">Tattoo</h1>
+            <p>Unique forms of art include tattooing. 
+                There is no educational requirement for tattoo artists. 
+                Finishing a training course or an apprenticeship to obtain a license. 
+                Tattoo artists frequently display a passion for their craft. 
+                A professional tattoo artist does not need to adhere to any governmental regulations. 
+                A tattoo artist uses needles and ink to permanently ink a pattern onto a client's body.</p>
+            </div>
+            <div class="box">
+            <img src="Services/webd.png" alt="">
+            <h1 class="headings">Painting</h1>
+            <p> 
+                Painting, the expression of ideas and emotions, with the creation of certain aesthetic qualities, in a two-dimensional visual language. The elements of this language—its shapes, lines, colours, tones, and textures—are used in various ways to produce sensations of volume, space, movement, and light on a flat surface</p>
+            </div>
+            <div class="box">
+                <img src="Services/pent.jpg" alt="">
+            <h1 class="headings">Pentration Testing</h1>
+            <p>A penetration test (pen test) is an authorized simulated attack performed on a computer system to evaluate its security. Penetration testers use the same tools, techniques, and processes as attackers to find and demonstrate the business impacts of weaknesses in a system. Penetration tests usually simulate a variety of attacks that could threaten a business. </p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form name="submit-to-google-sheet" action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Name">
+            <input type="email" name="email" class="input" placeholder="Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+        <span id="msgg"></span>
+    </section>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyOksrGkJDzCEIDAdn4SGWKYwMrFe6KOB23JXbNo7_akK60MnItsASMZc6ywPGHgRBu3g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msgg = document.getElementById("msgg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msgg.innerHTML = "Message sent successfully!"
+                setTimeout(function() {
+                    msgg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
